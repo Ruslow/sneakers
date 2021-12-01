@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Slider from "./components/Slider";
+import ItemData from "./components/ItemData";
+import { BrowserRouter } from "react-router-dom";
+import Menu from "./components/Menu";
+import { useGlobalContext } from "./context/context";
+import Images from "./data/Images";
+import Cart from "./components/Cart";
+import LightBox from "./components/LightBox";
+import BigImage from "./components/BigImage";
 
 function App() {
+  const { menu, cart, lightBox } = useGlobalContext()!;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      {menu ? <Menu /> : null}
+      {cart ? <Cart /> : null}
+      {lightBox ? <LightBox /> : null}
+      <Navbar />
+      <section className="xl:flex gap-x-24 xl:mt-24 max-w-my mx-auto xl:px-14">
+        <div className="xl:w-2/4">
+          <BigImage />
+          <Slider />
+        </div>
+        <ItemData />
+      </section>
+    </BrowserRouter>
   );
 }
 
