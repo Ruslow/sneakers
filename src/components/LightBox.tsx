@@ -1,6 +1,5 @@
 import React from "react";
 import { useGlobalContext } from "../context/context";
-import Images from "../data/Images";
 import Slider from "./Slider";
 import closeBtn from "../images/icon-close-white.svg";
 import SliderButtons from "./SliderButtons";

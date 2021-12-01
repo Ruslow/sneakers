@@ -5,7 +5,6 @@ import ItemData from "./components/ItemData";
 import { BrowserRouter } from "react-router-dom";
 import Menu from "./components/Menu";
 import { useGlobalContext } from "./context/context";
-import Images from "./data/Images";
 import Cart from "./components/Cart";
 import LightBox from "./components/LightBox";
 import BigImage from "./components/BigImage";
