@@ -18,7 +18,7 @@ function App() {
       {cart ? <Cart /> : null}
       {lightBox ? <LightBox /> : null}
       <Navbar />
-      <section className="xl:flex gap-x-24 xl:mt-24 max-w-my mx-auto xl:px-14">
+      <section className="xl:flex gap-x-28 xl:mt-16 max-w-my mx-auto xl:px-20">
         <div className="xl:w-2/4">
           <BigImage />
           <Slider />

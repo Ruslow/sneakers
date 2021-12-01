@@ -20,7 +20,7 @@ const Slider = () => {
                 <img
                   src={src}
                   alt={alt}
-                  className="opacity-100 xl:w-28 xl:h-28 cursor-pointer"
+                  className="opacity-100 xl:w-24 xl:h-24 cursor-pointer"
                 />
               </div>
             );
@@ -33,7 +33,7 @@ const Slider = () => {
               onClick={() => {
                 mainImage(index);
               }}
-              className={`absolute object-cover opacity-0 xl:opacity-100 xl:relative xl:w-28 xl:h-28 xl:rounded-2xl hover:opacity-30 cursor-pointer`}
+              className={`absolute object-cover opacity-0 xl:opacity-100 xl:relative xl:w-24 xl:h-24 xl:rounded-2xl hover:opacity-30 cursor-pointer`}
             />
           );
         })}

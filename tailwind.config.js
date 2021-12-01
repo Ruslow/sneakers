@@ -19,13 +19,13 @@ module.exports = {
       },
       height: {
         76: "19rem",
-        120: "38rem",
+        120: "30rem",
       },
       minHeight: {
         need: "16rem",
       },
       maxWidth: {
-        my: "1440px",
+        my: "1240px",
       },
       lineHeight: {
         "extra-loose": "2.7rem",
@@ -37,5 +37,5 @@ module.exports = {
       opacity: ["disabled"],
     },
   },
-  plugins: [require("tailwindcss"), require("autoprefixer")],
+  plugins: [],
 };
